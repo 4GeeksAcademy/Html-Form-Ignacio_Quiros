@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html-Form-Ignacio_Quiros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Top -->
+    <div class="mt-4 border rounded-top-2 bg-light p-2 ps-3">
+      <h1 class="fs-2">Payment Form Example</h1>
+    </div>
+    <div class="border p-2 ps-3">
+      <div class="alert alert-danger alert-dismissible fade show mt-3 " role="alert">
+        Some fields are missing.
+      </div>
+      <!-- Form-group -->
+      <div class="form-group row ">
+        <!-- Row 1 -->
+        <div class="col-5 mt-4">
+          Card # <br>
+          <input type="number" placeholder="XXXXXXXXXXXXXX" class="input-group input-group-lg mt-2">
+        </div>
+        <div class="col-3 mt-4">
+          CVC # <br>
+          <input type="number" placeholder="0000" class="input-group input-group-lg mt-2">
+        </div>
+        <div class="col-4 mt-4">
+          Amount <br>
+          <div class="d-flex mt-2">
+            <i class="fa-solid fa-dollar-sign pt-2 pe-1"></i>
+            <input type="number" placeholder="Amount" class="input-group input-group-lg">
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="col-12 mt-4 mb-2 input-group">
+          <span class="input-group-text">First name</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <span class="input-group-text ms-3">Last name</span>
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+
+        <!-- Row 3 -->
+        <div class="col-6 mt-4">
+          City <br>
+          <div class="d-flex mt-2"><input type="text" class="input-group input-group-lg ">
+          </div>
+        </div>
+        <div class="col-3 mt-4">
+          State <br>
+          <div class="d-flex mt-2">
+            <select class="form-select form-select-sm border-secondary rounded-1" aria-label="Default select example">
+              <option selected>Pick a state</option>
+              <option value="1">Arizona</option>
+              <option value="2">Colorado</option>
+              <option value="3">Delaware</option>
+              <option value="4">Indiana</option>
+              <option value="5">Maryland</option>
+              <option value="6">Ohio</option>
+              <option value="7">South Carolina</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="col-3 mt-4">
+          Postal Code <br>
+          <div class="d-flex mt-2">
+            <input type="number" class="input-group input-group-lg">
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="justify-content-between d-flex mt-4">
+          <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+            We accept: <br>
+            <div class=" p-2 d-flex justify-content-between mt-1 width-10 container-fluid bg-secondary rounded-2">
+              <label for="Mastercard"><i class="fa-brands fa-cc-mastercard "></i> </label>
+              <input id="Mastercard" type="radio" name="card">
+              <label for="Visa"> <i class="fa-brands fa-cc-visa ms-2"></i></label>
+              <input id="Visa" type="radio" name="card">
+              <label for="Paypal"> <i class="fa-brands fa-cc-paypal ms-2"></i></label>
+              <input id="Paypal" type="radio" name="card">
+              <label for="AmazonPay"> <i class="fa-brands fa-cc-amazon-pay ms-2"></i></label>
+              <input id="AmazonPay" type="radio" name="card">
+            </div>
+          </div>
+          <div class="col-6 ps-3">
+            Message <br>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <p class="text-secondary">Add any notes here!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="border rounded-bottom-2 bg-light p-2 ps-3 d-flex justify-content-end">
+      <button class="btn btn-secondary">
+        Cancel
+      </button>
+      <button class="btn btn-primary ms-1">
+        Send
+      </button>
+    </div>
+  </div>
+</body>
+</html>
